@@ -1,3 +1,36 @@
 body {
   background-color: #8A7650;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding-block: 10px;
+  background-color: #ECE7D1;
+}
+.nav_menu a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding-inline: 25px;
+  padding-block: 5px;
+  color: #8A7650;
+  border-radius: 20px;
+}
+.nav_menu a:hover {
+  background: #8A7650;
+  color: #ECE7D1;
+}
+
+.btnLigne {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: auto;
 }/*# sourceMappingURL=main.css.map */

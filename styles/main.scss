@@ -1,4 +1,16 @@
 @use "./variables.scss";
+@use "./modal.scss";
 body{
-    background-color:variables.$bgBody
+    background-color:variables.$bgBody;
+    
+}
+.nav_menu{
+    @include modal.navBottom_menu
+}
+.btnLigne{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: auto;
+    
 }
