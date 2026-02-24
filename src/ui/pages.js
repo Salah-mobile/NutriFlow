@@ -28,6 +28,7 @@ export function HomePage() {
     let h2=document.createElement("h1")
     h2.innerText="Popular Recipes"
     let divC=document.createElement("div")
+    divC.className="cardsR"
     for (let i = 0; i < bestRecipes.length; i++) {
         let div=document.createElement("div")
         let img=document.createElement("img")
@@ -38,7 +39,6 @@ export function HomePage() {
         div.appendChild(h)
         divC.appendChild(div)
     }
-    
     document.body.appendChild(h1)
     document.body.appendChild(p1)
     document.body.appendChild(div)

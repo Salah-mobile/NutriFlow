@@ -33,4 +33,21 @@ body {
   flex-direction: row;
   gap: 20px;
   overflow: auto;
+}
+
+.cardsR {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.cardsR div {
+  padding: 0;
+}
+.cardsR div img {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+.cardsR div h1 {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
