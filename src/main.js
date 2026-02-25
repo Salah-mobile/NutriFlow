@@ -1,15 +1,17 @@
 import {navMenu,HomePage} from './ui/pages.js'
 import {recipes} from './api/recipeProvider.js';
 navMenu()
+ let bodyP=document.getElementById("bodyP")
 let items=document.getElementsByClassName("itmeMenu")
+HomePage()
 items[0].addEventListener("click",()=>{
-    console.log("HomePage");
+    bodyP.innerHTML=""
+    HomePage()
 })
 items[1].addEventListener("click",()=>{
-    console.log("FavoritePage");
+     bodyP.innerHTML=""
 })
 items[2].addEventListener("click",()=>{
-    console.log("SearchPage");
+     bodyP.innerHTML=""
 })
 
-HomePage()

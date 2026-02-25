@@ -28,26 +28,85 @@ body {
   color: #ECE7D1;
 }
 
-.btnLigne {
+.homePage {
+  margin-bottom: 50px;
+}
+.homePage h1 {
+  font-family: italiana;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+}
+.homePage P {
+  font-size: 20px;
+  font-family: italiana;
+  font-weight: bolder;
+}
+.homePage .btnLigne {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow: auto;
 }
-
-.cardsR {
+.homePage .btn {
+  border: none;
+  padding-block: 9px;
+  cursor: pointer;
+  margin-inline: 5px;
+  margin-block: 3px;
+  border-radius: 20px;
+  padding-inline: 10px;
+  background-color: #ECE7D1;
+}
+.homePage .cardsR {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.cardsR div {
-  padding: 0;
+.homePage .cardsR .info {
+  padding-inline: 20px;
+  padding-block: 6px;
+  margin-top: 7px;
 }
-.cardsR div img {
+.homePage .cardsR .info span {
+  margin-inline: 16px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+.homePage .cardsR .info .vertC {
+  background-color: #B4E50D;
+}
+.homePage .cardsR .info .orangC {
+  background-color: #FF9B2F;
+}
+.homePage .cardsR .info .redC {
+  background-color: #FB4141;
+}
+.homePage .cardsR div {
+  background-color: #ECE7D1;
+  border-radius: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .cardsR div p {
+  font-size: 20px;
+  font-family: italiana;
+  font-weight: 800;
+}
+.homePage .cardsR div img {
   width: 200px;
   height: 200px;
-  padding: 0;
+  padding-top: 20px;
+  border-radius: 30px;
 }
-.cardsR div h1 {
-  margin: 0;
+.homePage .cardsR div div {
+  display: flex;
+  flex-direction: row;
+}
+.homePage .cardsR div div i {
+  padding-inline-start: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

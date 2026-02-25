@@ -2,31 +2,90 @@
 @use "./modal.scss";
 body{
     background-color:variables.$bgBody;
-    
 }
 .nav_menu{
     @include modal.navBottom_menu
 }
+.homePage{
+    margin-bottom: 50px;
+   h1{
+     font-family: italiana;
+     font-weight: bolder;
+     font-size: 40px;
+     text-align: center;
+   }
+   P{
+    font-size: 20px;
+    font-family: italiana;
+    font-weight: bolder;
+   }
 .btnLigne{
     display: flex;
     flex-direction: row;
     gap: 20px;
     overflow: auto;
 }
+.btn{
+    border:none;
+    padding-block: 9px;
+    cursor: pointer;
+    margin-inline: 5px;
+    margin-block: 3px;
+    border-radius: 20px;
+    padding-inline:10px;
+    background-color: #ECE7D1;
+}
 .cardsR{
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-    div{
+  .info{
+    padding-inline:20px;
+    padding-block: 6px;
+    margin-top: 7px;
+    span{
+        margin-inline: 16px;
+        padding-inline: 20px;
+        border-radius: 20px;
+        align-items: center;
+    }
+    .vertC{
+          background-color: #B4E50D;
+    }
+    .orangC{
+        background-color: #FF9B2F;
+    }
+    .redC{
+        background-color: #FB4141;
+    }
+   
+  }
+  div{
+        background-color: #ECE7D1;
+        border-radius: 20px;
         padding: 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 20px;
+            font-family: italiana;
+            font-weight: 800;
+        }
         img{
             width: 200px;
             height: 200px;
-            padding: 0;
+            padding-top: 20px;
+            border-radius: 30px;
         }
-        h1{
-           margin: 0;
+        div{
+            display: flex;
+            flex-direction: row;
+            i{
+                padding-inline-start: 20px;
+                cursor: pointer;
+            }
         }
     }
-
+}
 }
