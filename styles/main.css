@@ -109,4 +109,40 @@ body {
 .homePage .cardsR div div i {
   padding-inline-start: 20px;
   cursor: pointer;
+}
+
+.recipePage {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.recipePage img {
+  width: 300px;
+  height: autp;
+  padding: 20px;
+  border-radius: 40px;
+}
+.recipePage .recipeInfo {
+  display: grid;
+  background-color: #B4E50D;
+  margin: 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px;
+}
+.recipePage .recipeLine p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.recipePage .recipeLine span {
+  font-size: 20px;
+  color: white;
+}
+.recipePage .ingerC ul, .recipePage .instructions ul {
+  list-style: none;
+}
+.recipePage .ingerC ul li, .recipePage .instructions ul li {
+  margin-bottom: 6px;
 }/*# sourceMappingURL=main.css.map */
