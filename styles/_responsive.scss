@@ -1,0 +1,45 @@
+
+@media (max-width: 992px) {
+
+    .cardsR {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .homePage {
+      h1 { font-size: 32px; }
+      p  { font-size: 18px; }
+    }
+  
+    .recipePage img {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+  
+    .cardsR {
+      grid-template-columns: 1fr;
+    }
+  
+    .homePage {
+      h1 { font-size: 26px; }
+      p  { font-size: 16px; }
+  
+      .btnLigne { gap: 10px; }
+      .btn { font-size: 14px; padding-inline: 8px; }
+    }
+  
+    .recipePage {
+      img { width: 200px; }
+  
+      .recipeLine {
+        p { font-size: 22px; }
+        span { font-size: 16px; }
+      }
+    }
+  
+    .nav_menu a {
+      font-size: 18px;
+      padding-inline: 10px;
+    }
+  }

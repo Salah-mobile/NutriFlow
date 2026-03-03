@@ -1,25 +1,29 @@
-@mixin navBottom_menu{
+@use "./variables.scss" as v;
+
+@mixin navBottom_menu {
     display: flex;
     list-style: none; 
     position: fixed;
     bottom: 0;
     right: 0;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
     margin: 0;
     padding-block: 10px;
-    background-color: #ECE7D1;
-    a{
+    background-color: v.$bgCard;
+
+    a {
         text-decoration: none;
         font-size: 25px;
-        font-weight:600;
+        font-weight: 600;
         padding-inline: 25px;
         padding-block: 5px;
-        color:#8A7650;
-        border-radius: 20px;
-        &:hover{
-         background: #8A7650;
-         color:#ECE7D1;   
+        color: v.$textPrimary;
+        border-radius: v.$radiusMain;
+
+        &:hover {
+            background: v.$textPrimary;
+            color: v.$bgCard;   
         }
     }
 }
